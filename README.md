@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-{samplezoo} is a package designed to simplify working with probability
+{samplezoo} is designed to simplify working with probability
 distributions, making it easier for users to teach and learn about
 statistical sampling and probability models.
 
