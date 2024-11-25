@@ -30,28 +30,28 @@ library(samplezoo)
 
 ```
 
-## Generate a small dataset (i.e., 100 rows)
+### Generate a small dataset (i.e., 100 rows)
 ```{r}
 data_small <- samplezoo("small")
 head(data_small)
 
 ```
 
-## Generate a medium sized dataset (i.e., 1,000 rows)
+### Generate a medium sized dataset (i.e., 1,000 rows)
 ```{r}
 data_medium <- samplezoo("medium")
 head(data_medium)
 
 ```
 
-## Generate a large sized dataset (i.e., 10,000 rows)
+### Generate a large sized dataset (i.e., 10,000 rows)
 ```{r}
 data_large <- samplezoo("large")
 head(data_large)
 
 ```
 
-## Ensuring Reproducibility with set.seed()
+### Ensuring Reproducibility with set.seed()
 
 To ensure reproducibility, use set.seed() before generating a dataset. This guarantees the same random values are produced each time the code is run.
 
