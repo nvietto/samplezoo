@@ -3,7 +3,7 @@
 \docType{package}
 \name{samplezoo-package}
 \alias{samplezoo-package}
-\title{samplezoo: What the Package Does (One Line, Title Case)}
+\title{samplezoo: Generate Samples with a Variety of Probability Distributions}
 \description{
 What the package does (one paragraph).
 }
