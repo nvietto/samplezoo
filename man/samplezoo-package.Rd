@@ -7,6 +7,13 @@
 \description{
 What the package does (one paragraph).
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://nvietto.github.io/samplezoo/}
+}
+
+}
 \author{
 \strong{Maintainer}: Nicholas Vietto \email{nicholasvietto@gmail.com} [copyright holder]
 
