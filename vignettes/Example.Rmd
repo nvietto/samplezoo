@@ -22,7 +22,7 @@ Each dataset contains:
 
 * Random variables from distributions such as Normal, Binomial, Poisson, and others.
 
-* Adjustable sample sizes to meet different simulation or testing needs.
+* Adjustable sample sizes to meet needs.
 
 
 ```{r setup}

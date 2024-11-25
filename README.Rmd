@@ -1,0 +1,26 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# samplezoo
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+samplezoo is to designed to simplify working with probability distributions by making it easy for users to  with and learn about statistical sampling and probability models. 
+
+
+
+
+
