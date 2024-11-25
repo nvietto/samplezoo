@@ -1,0 +1,69 @@
+---
+title: "Example"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Example}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Overview 
+
+This vignette demonstrates how to use the {samplezoo} package to generate datasets of varying sizes (small, medium, and large) with random variables from multiple probability distributions.
+
+Each dataset contains:
+
+* Random variables from distributions such as Normal, Binomial, Poisson, and others.
+
+* Adjustable sample sizes to meet different simulation or testing needs.
+
+
+```{r setup}
+library(samplezoo)
+
+```
+
+## Generate a small dataset (i.e., 100 rows)
+```{r}
+data_small <- samplezoo("small")
+head(data_small)
+
+```
+
+## Generate a medium sized dataset (i.e., 1,000 rows)
+```{r}
+data_medium <- samplezoo("medium")
+head(data_medium)
+
+```
+
+## Generate a large sized dataset (i.e., 10,000 rows)
+```{r}
+data_large <- samplezoo("large")
+head(data_large)
+
+```
+
+## Ensuring Reproducibility with set.seed()
+
+To ensure reproducibility, use set.seed() before generating a dataset. This guarantees the same random values are produced each time the code is run.
+
+```{r}
+set.seed(123)
+data_large <- samplezoo("large")
+head(data_large)
+```
+
+```{r}
+set.seed(123)
+data_large <- samplezoo("large")
+head(data_large)
+```
+
