@@ -1,27 +1,3 @@
-#' Distributions List
-#' A list of functions that generate data frames of random variables from various distributions.
-#' Each function creates a data frame with specified distributions and sample sizes.
-#' @format A list of three functions:
-#' \describe{
-#'   \item{`small`}{Generates a data frame with 100 samples per distribution.}
-#'   \item{`medium`}{Generates a data frame with 1,000 samples per distribution.}
-#'   \item{`large`}{Generates a data frame with 10,000 samples per distribution.}
-#' }
-#' @details
-#' The distributions included in each data frame are:
-#' \itemize{
-#'   \item `norm`: Normal distribution with mean and standard deviation parameters.
-#'   \item `norm2`, `norm3`: Variations of normal distribution with different spreads.
-#'   \item `binom`: Binomial (Bernoulli) distribution.
-#'   \item `neg`: Negative binomial distribution.
-#'   \item `pois`: Poisson distribution.
-#'   \item `exp`: Exponential distribution.
-#'   \item `unif`: Uniform distribution.
-#'   \item `beta`: Beta distribution.
-#'   \item `gamma`: Gamma distribution.
-#'   \item `chisq`: Chi-squared distribution.
-#'   \item `t_dist`: Student's t distribution.
-#' }
 distributions <- list(
   small = function() { # using a function keeps values mutable, allowing set.seed to work
     data.frame(
@@ -72,4 +48,3 @@ distributions <- list(
     )
   }
 )
-

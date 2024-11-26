@@ -2,55 +2,44 @@
 % Please edit documentation in R/samplezoo.R
 \name{samplezoo}
 \alias{samplezoo}
-\title{Generate a Sample Dataset
-Retrieves a dataset of the specified size (\code{small}, \code{medium}, or \code{large}) from
-the pre-defined \code{distributions} list. Each dataset contains random variables
-from various probability distributions.}
+\title{Generate Samples with a Variety of Probability Distributions}
 \usage{
 samplezoo(name)
 }
 \arguments{
-\item{name}{A character string specifying the dataset size. Must be one of:
-\code{"small"}, \code{"medium"}, or \code{"large"}.}
+\item{name}{A character string specifying the dataset size.
+The three dataset sizes are:
+\itemize{
+\item \code{small}: Generates a data frame with 100 samples per distribution.
+\item \code{medium}: Generates a data frame with 1,000 samples per distribution.
+\item \code{large}: Generates a data frame with 10,000 samples per distribution.
+}}
 }
 \value{
-A data frame containing simulated data with random variables from
-different distributions:
-\describe{
-\item{\code{norm}}{Normal distribution.}
-\item{\code{norm2}, \code{norm3}}{Variations of normal distributions.}
-\item{\code{binom}}{Binomial (Bernoulli) distribution.}
-\item{\code{neg}}{Negative binomial distribution.}
-\item{\code{pois}}{Poisson distribution.}
-\item{\code{exp}}{Exponential distribution.}
-\item{\code{unif}}{Uniform distribution.}
-\item{\code{beta}}{Beta distribution.}
-\item{\code{gamma}}{Gamma distribution.}
-\item{\code{chisq}}{Chi-squared distribution.}
-\item{\code{t_dist}}{Student's t distribution.}
-}
+A dataset containing variables with common distributions.
 }
 \description{
-Generate a Sample Dataset
-Retrieves a dataset of the specified size (\code{small}, \code{medium}, or \code{large}) from
-the pre-defined \code{distributions} list. Each dataset contains random variables
-from various probability distributions.
+Generate Samples with a Variety of Probability Distributions
 }
 \details{
-The \code{distributions} list defines the datasets for three sizes:
+The distributions included in each data frame are:
 \itemize{
-\item \code{"small"}: 100 samples per distribution.
-\item \code{"medium"}: 1,000 samples per distribution.
-\item \code{"large"}: 10,000 samples per distribution.
+\item \code{norm}: Normal distribution with mean and standard deviation parameters.
+\item \code{norm2}: Slight variation of the normal distribution.
+\item \code{norm3}: Another slight variation of the normal distribution.
+\item \code{binom}: Binomial (Bernoulli) distribution.
+\item \code{neg}: Negative binomial distribution.
+\item \code{pois}: Poisson distribution.
+\item \code{exp}: Exponential distribution.
+\item \code{unif}: Uniform distribution.
+\item \code{beta}: Beta distribution.
+\item \code{gamma}: Gamma distribution.
+\item \code{chisq}: Chi-squared distribution.
+\item \code{t_dist}: Student's t-distribution.
 }
-This function checks the validity of the \code{name} parameter and retrieves
-the corresponding dataset from the \code{distributions} list.
 }
 \examples{
-# Generate a small dataset
 small_data <- samplezoo("small")
-# Generate a medium dataset
 medium_data <- samplezoo("medium")
-# Generate a large dataset
 large_data <- samplezoo("large")
 }
