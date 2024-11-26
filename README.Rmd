@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/nvietto/samplezoo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nvietto/samplezoo/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-{samplezoo} is designed to simplify generating samples with various probability distribution, making it easier for users to create data frames quickly.
+{samplezoo} is designed to simplify generating samples with various probability distributions, making it easier for users to create data frames quickly, though it prioritizes simplicity and speed over customization of sample parameters. 
 
 
 ## Installation
@@ -32,7 +32,7 @@ pak::pak("nvietto/samplezoo")
 
 ## Motivation
 
-Creating or reprexing datasets on the [Posit Community](https://forum.posit.co/) help forum, can be challenging, especially for beginners. Similarly, building quick datasets to demonstrate a problem for a lecture, to troubleshoot, or to even assign as homework can often involve repetitive code that is both time-consuming and easy to forget. To address these challenges and save time, {samplezoo} provides a streamlined approach. 
+Creating or reprexing datasets on the [Posit Community](https://forum.posit.co/) help forum can be challenging, especially for beginners. Similarly, building quick datasets for lectures, troubleshooting, or homework assignments often involves repetitive and time-consuming code that’s easy to forget. To simplify these tasks and save some time, {samplezoo} provides a streamlined approach to generating data sets. 
 
 
 For example, generating a dataset with various probability distributions typically looks like this:
