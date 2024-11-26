@@ -1,6 +1,6 @@
 Package: samplezoo
 Title: Generate Samples with a Variety of Probability Distributions
-Version: 1.0.0
+Version: 0.0.0.9000
 Authors@R: person(given = "Nicholas",
                   family = "Vietto", 
                   email = "nicholasvietto@gmail.com", 
