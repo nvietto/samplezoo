@@ -6,7 +6,7 @@ Authors@R: person(given = "Nicholas",
                   email = "nicholasvietto@gmail.com", 
                   role = c("aut", "cre", "cph")) 
 Maintainer: Nicholas Vietto <nicholasvietto@gmail.com>
-Description: What the package does (one paragraph).
+Description: Simplifies the process of generating samples from various probability distributions, enabling users to create data frames quickly.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
