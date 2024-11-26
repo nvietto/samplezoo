@@ -15,7 +15,7 @@
 #' \itemize{
 #'   \item `norm`: Normal distribution with mean and standard deviation parameters.
 #'   \item `norm2`, `norm3`: Variations of normal distribution with different spreads.
-#'   \item `binom`: Binomial distribution.
+#'   \item `binom`: Binomial (Bernoulli) distribution.
 #'   \item `neg`: Negative binomial distribution.
 #'   \item `pois`: Poisson distribution.
 #'   \item `exp`: Exponential distribution.
@@ -23,6 +23,7 @@
 #'   \item `beta`: Beta distribution.
 #'   \item `gamma`: Gamma distribution.
 #'   \item `chisq`: Chi-squared distribution.
+#'   \item `t_dist`: Student's t distribution.
 #' }
 #'
 distributions <- list(
@@ -38,7 +39,8 @@ distributions <- list(
       unif = runif(n = 100, min = 0, max = 1),
       beta = rbeta(n = 100, shape1 = 2, shape2 = 5),
       gamma = rgamma(n = 100, shape = 2, scale = 2),
-      chisq = rchisq(n = 100, df = 2)
+      chisq = rchisq(n = 100, df = 2),
+      t_dist = rt(n = 100, df = 10)
     )
   },
   medium = function() {
@@ -53,7 +55,8 @@ distributions <- list(
       unif = runif(n = 1000, min = 0, max = 1),
       beta = rbeta(n = 1000, shape1 = 2, shape2 = 5),
       gamma = rgamma(n = 1000, shape = 2, scale = 2),
-      chisq = rchisq(n = 1000, df = 2)
+      chisq = rchisq(n = 1000, df = 5),
+      t_dist = rt(n = 1000, df = 20)
     )
   },
   large = function() {
@@ -68,7 +71,8 @@ distributions <- list(
       unif = runif(n = 10000, min = 0, max = 1),
       beta = rbeta(n = 10000, shape1 = 2, shape2 = 5),
       gamma = rgamma(n = 10000, shape = 2, scale = 2),
-      chisq = rchisq(n = 10000, df = 2)
+      chisq = rchisq(n = 10000, df = 10),
+      t_dist = rt(n = 10000, df = 30)
     )
   }
 )

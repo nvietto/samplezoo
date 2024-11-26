@@ -12,7 +12,7 @@
 #' \describe{
 #'   \item{`norm`}{Normal distribution.}
 #'   \item{`norm2`, `norm3`}{Variations of normal distributions.}
-#'   \item{`binom`}{Binomial distribution.}
+#'   \item{`binom`}{Binomial (Bernoulli) distribution.}
 #'   \item{`neg`}{Negative binomial distribution.}
 #'   \item{`pois`}{Poisson distribution.}
 #'   \item{`exp`}{Exponential distribution.}
@@ -20,17 +20,18 @@
 #'   \item{`beta`}{Beta distribution.}
 #'   \item{`gamma`}{Gamma distribution.}
 #'   \item{`chisq`}{Chi-squared distribution.}
+#'   \item{`t_dist`}{Student's t distribution.}
 #' }
 #'
 #' @details
-#' The `distributions` list defines the datasets:
+#' The `distributions` list defines the datasets for three sizes:
 #' \itemize{
 #'   \item `"small"`: 100 samples per distribution.
 #'   \item `"medium"`: 1,000 samples per distribution.
 #'   \item `"large"`: 10,000 samples per distribution.
 #' }
-#' This function verifies the dataset name, checks its validity, and retrieves
-#' the corresponding dataset from `distributions`.
+#' This function checks the validity of the `name` parameter and retrieves
+#' the corresponding dataset from the `distributions` list.
 #'
 #' @examples
 #' # Generate a small dataset
