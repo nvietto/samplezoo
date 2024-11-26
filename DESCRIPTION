@@ -17,5 +17,5 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 VignetteBuilder: knitr
-URL: https://nvietto.github.io/samplezoo, https://github.com/nvietto/samplezoo
+URL: https://nvietto.github.io/samplezoo, https://github.com/nvietto/samplezoo, https://nvietto.github.io/samplezoo/
 BugReports: https://github.com/nvietto/samplezoo/issues
