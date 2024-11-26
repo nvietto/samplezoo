@@ -24,7 +24,7 @@ The distributions included in each data frame are:
 \itemize{
 \item \code{norm}: Normal distribution with mean and standard deviation parameters.
 \item \code{norm2}, \code{norm3}: Variations of normal distribution with different spreads.
-\item \code{binom}: Binomial distribution.
+\item \code{binom}: Binomial (Bernoulli) distribution.
 \item \code{neg}: Negative binomial distribution.
 \item \code{pois}: Poisson distribution.
 \item \code{exp}: Exponential distribution.
@@ -32,6 +32,7 @@ The distributions included in each data frame are:
 \item \code{beta}: Beta distribution.
 \item \code{gamma}: Gamma distribution.
 \item \code{chisq}: Chi-squared distribution.
+\item \code{t_dist}: Student's t distribution.
 }
 }
 \keyword{datasets}

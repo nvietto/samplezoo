@@ -16,7 +16,7 @@ different distributions:
 \describe{
 \item{\code{norm}}{Normal distribution.}
 \item{\code{norm2}, \code{norm3}}{Variations of normal distributions.}
-\item{\code{binom}}{Binomial distribution.}
+\item{\code{binom}}{Binomial (Bernoulli) distribution.}
 \item{\code{neg}}{Negative binomial distribution.}
 \item{\code{pois}}{Poisson distribution.}
 \item{\code{exp}}{Exponential distribution.}
@@ -24,6 +24,7 @@ different distributions:
 \item{\code{beta}}{Beta distribution.}
 \item{\code{gamma}}{Gamma distribution.}
 \item{\code{chisq}}{Chi-squared distribution.}
+\item{\code{t_dist}}{Student's t distribution.}
 }
 }
 \description{
@@ -32,14 +33,14 @@ the pre-defined \code{distributions} list. Each dataset contains random variable
 from various probability distributions.
 }
 \details{
-The \code{distributions} list defines the datasets:
+The \code{distributions} list defines the datasets for three sizes:
 \itemize{
 \item \code{"small"}: 100 samples per distribution.
 \item \code{"medium"}: 1,000 samples per distribution.
 \item \code{"large"}: 10,000 samples per distribution.
 }
-This function verifies the dataset name, checks its validity, and retrieves
-the corresponding dataset from \code{distributions}.
+This function checks the validity of the \code{name} parameter and retrieves
+the corresponding dataset from the \code{distributions} list.
 }
 \examples{
 # Generate a small dataset
