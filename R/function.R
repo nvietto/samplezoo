@@ -1,12 +1,9 @@
 #' Generate a Sample Dataset
-#'
 #' Retrieves a dataset of the specified size (`small`, `medium`, or `large`) from
 #' the pre-defined `distributions` list. Each dataset contains random variables
 #' from various probability distributions.
-#'
 #' @param name A character string specifying the dataset size. Must be one of:
 #'   `"small"`, `"medium"`, or `"large"`.
-#'
 #' @return A data frame containing simulated data with random variables from
 #'   different distributions:
 #' \describe{
@@ -22,7 +19,6 @@
 #'   \item{`chisq`}{Chi-squared distribution.}
 #'   \item{`t_dist`}{Student's t distribution.}
 #' }
-#'
 #' @details
 #' The `distributions` list defines the datasets for three sizes:
 #' \itemize{
@@ -32,17 +28,13 @@
 #' }
 #' This function checks the validity of the `name` parameter and retrieves
 #' the corresponding dataset from the `distributions` list.
-#'
 #' @examples
 #' # Generate a small dataset
 #' small_data <- samplezoo("small")
-#'
 #' # Generate a medium dataset
 #' medium_data <- samplezoo("medium")
-#'
 #' # Generate a large dataset
 #' large_data <- samplezoo("large")
-#'
 #' @export
 samplezoo <- function(name) {
 

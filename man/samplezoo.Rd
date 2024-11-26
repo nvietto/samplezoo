@@ -2,7 +2,10 @@
 % Please edit documentation in R/function.R
 \name{samplezoo}
 \alias{samplezoo}
-\title{Generate a Sample Dataset}
+\title{Generate a Sample Dataset
+Retrieves a dataset of the specified size (\code{small}, \code{medium}, or \code{large}) from
+the pre-defined \code{distributions} list. Each dataset contains random variables
+from various probability distributions.}
 \usage{
 samplezoo(name)
 }
@@ -28,6 +31,7 @@ different distributions:
 }
 }
 \description{
+Generate a Sample Dataset
 Retrieves a dataset of the specified size (\code{small}, \code{medium}, or \code{large}) from
 the pre-defined \code{distributions} list. Each dataset contains random variables
 from various probability distributions.
@@ -45,11 +49,8 @@ the corresponding dataset from the \code{distributions} list.
 \examples{
 # Generate a small dataset
 small_data <- samplezoo("small")
-
 # Generate a medium dataset
 medium_data <- samplezoo("medium")
-
 # Generate a large dataset
 large_data <- samplezoo("large")
-
 }

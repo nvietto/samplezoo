@@ -3,7 +3,9 @@
 \docType{data}
 \name{distributions}
 \alias{distributions}
-\title{Distributions List}
+\title{Distributions List
+A list of functions that generate data frames of random variables from various distributions.
+Each function creates a data frame with specified distributions and sample sizes.}
 \format{
 A list of three functions:
 \describe{
@@ -16,6 +18,7 @@ A list of three functions:
 distributions
 }
 \description{
+Distributions List
 A list of functions that generate data frames of random variables from various distributions.
 Each function creates a data frame with specified distributions and sample sizes.
 }

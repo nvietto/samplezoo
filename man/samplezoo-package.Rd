@@ -7,7 +7,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-What the package does (one paragraph).
+Simplifies the process of generating samples from various probability distributions, enabling users to create data frames quickly.
 }
 \seealso{
 Useful links:
