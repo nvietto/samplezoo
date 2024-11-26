@@ -20,7 +20,7 @@ This vignette demonstrates how to use the {samplezoo} package to generate datase
 
 Each dataset contains:
 
-* Random variables from distributions such as Normal, Binomial, Poisson, and others.
+* Variables/columns from common distributions such as Normal, Binomial, Poisson, and others.
 
 * Adjustable sample sizes to meet needs.
 
@@ -51,9 +51,9 @@ head(data_large)
 
 ```
 
-### Ensuring Reproducibility with set.seed()
+### Adding Variation or Ensuring Reproducibility with set.seed()
 
-To ensure reproducibility, use set.seed() before generating a dataset. This guarantees the same random values are produced each time the code is run.
+To ensure reproducibility and introduce controlled variation in your dataset, use set.seed() before generating random data.
 
 ```{r}
 set.seed(123)
@@ -62,7 +62,7 @@ head(data_large)
 ```
 
 ```{r}
-set.seed(123)
+set.seed(456)
 data_large <- samplezoo("large")
 head(data_large)
 ```
