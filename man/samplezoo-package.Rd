@@ -12,7 +12,6 @@ Simplifies the process of generating samples from various probability distributi
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://nvietto.github.io/samplezoo}
   \item \url{https://github.com/nvietto/samplezoo}
   \item \url{https://nvietto.github.io/samplezoo/}
   \item Report bugs at \url{https://github.com/nvietto/samplezoo/issues}
