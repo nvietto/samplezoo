@@ -69,7 +69,7 @@ different distributions:</p><dl><dt><code>norm</code></dt>
 <dd><p>Variations of normal distributions.</p></dd>
 
 <dt><code>binom</code></dt>
-<dd><p>Binomial distribution.</p></dd>
+<dd><p>Binomial (Bernoulli) distribution.</p></dd>
 
 <dt><code>neg</code></dt>
 <dd><p>Negative binomial distribution.</p></dd>
@@ -92,15 +92,18 @@ different distributions:</p><dl><dt><code>norm</code></dt>
 <dt><code>chisq</code></dt>
 <dd><p>Chi-squared distribution.</p></dd>
 
+<dt><code>t_dist</code></dt>
+<dd><p>Student's t distribution.</p></dd>
+
 
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>The <code>distributions</code> list defines the datasets:</p><ul><li><p><code>"small"</code>: 100 samples per distribution.</p></li>
+    <p>The <code>distributions</code> list defines the datasets for three sizes:</p><ul><li><p><code>"small"</code>: 100 samples per distribution.</p></li>
 <li><p><code>"medium"</code>: 1,000 samples per distribution.</p></li>
 <li><p><code>"large"</code>: 10,000 samples per distribution.</p></li>
-</ul><p>This function verifies the dataset name, checks its validity, and retrieves
-the corresponding dataset from <code>distributions</code>.</p>
+</ul><p>This function checks the validity of the <code>name</code> parameter and retrieves
+the corresponding dataset from the <code>distributions</code> list.</p>
     </div>
 
     <div class="section level2">
