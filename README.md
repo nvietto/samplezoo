@@ -4,6 +4,8 @@
 # samplezoo
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/nvietto/samplezoo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nvietto/samplezoo/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 {samplezoo} is designed to simplify generating samples with various
