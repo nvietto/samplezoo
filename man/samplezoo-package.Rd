@@ -12,7 +12,7 @@ What the package does (one paragraph).
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://nvietto.github.io/samplezoo/}
+  \item \url{https://nvietto.github.io/samplezoo}
 }
 
 }
