@@ -5,6 +5,8 @@
 \alias{samplezoo-package}
 \title{samplezoo: Generate Samples with a Variety of Probability Distributions}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 What the package does (one paragraph).
 }
 \seealso{
