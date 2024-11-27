@@ -1,5 +1,5 @@
 ---
-title: "Example"
+title: "Generating Small, Medium, and Large Datasets"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Example}
