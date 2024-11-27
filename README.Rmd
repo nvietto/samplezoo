@@ -18,8 +18,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/nvietto/samplezoo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nvietto/samplezoo/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-{samplezoo} is designed to simplify generating samples with various probability distributions, making it easier for users to create data frames quickly, though it prioritizes simplicity and speed over customization of sample parameters. 
-
+The {samplezoo} package simplifies generating samples with various probability distributions, enabling users to quickly create data frames for demonstrations, troubleshooting, or teaching. By prioritizing simplicity and speed over customization of sample parameters, {samplezoo} reduces the need for repetitive code, making it particularly useful for beginners or anyone seeking to save time while working with statistical and probabilistic data.
 
 ## Installation
 
@@ -39,16 +38,18 @@ For example, generating a dataset with various probability distributions typical
   
 ```r
 numeric_data <- data.frame(
-  Variable1 = rnorm(100, mean = 50, sd = 10),
-  Variable2 = runif(100, min = 0, max = 100),
-  Variable3 = rpois(100, lambda = 5),
-  Variable4 = rbeta(100, shape1 = 2, shape2 = 5),
-  Variable5 = rexp(100, rate = 0.1),
-  Variable6 = rchisq(100, df = 4),
-  Variable7 = rbinom(100, size = 10, prob = 0.5),
-  Variable8 = rt(100, df = 10),
-  Variable9 = rnorm(100, mean = 100, sd = 20),
-  Variable10 = rgamma(100, shape = 2, rate = 0.2)
+      norm = rnorm(n = 100, mean = 50, sd = 15),
+      norm2 = rnorm(n = 100, mean = 60, sd = 10),
+      norm3 = rnorm(n = 100, mean = 40, sd = 20),
+      binom = rbinom(n = 100, size = 1, prob = 0.20),
+      neg = rnbinom(n = 100, size = 1, prob = 0.50),
+      pois = rpois(n = 100, lambda = 3),
+      exp = rexp(n = 100, rate = 0.10),
+      unif = runif(n = 100, min = 0, max = 1),
+      beta = rbeta(n = 100, shape1 = 2, shape2 = 5),
+      gamma = rgamma(n = 100, shape = 2, scale = 2),
+      chisq = rchisq(n = 100, df = 2),
+      t_dist = rt(n = 100, df = 10)
 )
 
 numeric_data <- round(numeric_data, 2)
@@ -58,15 +59,13 @@ head(numeric_data)
 
 ```r
 
-Variable1 Variable2 Variable3 Variable4 Variable5 Variable6 Variable7 Variable8 Variable9 Variable10
-1     33.99      2.66         6      0.73      1.48      1.56         6      1.03    111.61      11.57
-2     43.65     12.66         4      0.56      7.17      0.19         4      1.13    109.25       7.07
-3     49.69     41.41         5      0.50     14.71      3.25         4      0.13    101.86      10.08
-4     44.02      5.97         8      0.43      9.22      2.75         4      1.07     79.97       6.54
-5     64.74     90.74         6      0.37      2.15      1.26         4      0.48    113.79      16.18
-6     38.68     93.52         2      0.28      0.85      4.51         5     -0.17     93.28      16.91
-
-
+   norm norm2 norm3 binom neg pois   exp unif beta gamma chisq t_dist
+1 46.38 73.25 34.66     0   4    4  8.49 0.89 0.32  1.30  2.94  -0.71
+2 55.60 60.73 34.37     0   0    2  7.26 0.08 0.20  2.98  1.23  -0.88
+3 42.81 68.03 18.15     0   1    0  0.02 0.70 0.17  2.18  3.89  -0.75
+4 26.75 62.36 -3.14     0   0    3 11.92 0.05 0.20  8.72  2.16  -1.24
+5 51.77 67.96 13.18     0   0    2  3.90 0.34 0.04  5.58  1.22  -0.74
+6 65.95 64.32 38.59     0   0    2  6.85 0.04 0.29  8.12  4.32   0.88
 
 ```
 

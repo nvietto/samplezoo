@@ -7,7 +7,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-Simplifies the process of generating samples from various probability distributions, enabling users to create data frames quickly.
+The 'samplezoo' package streamlines the process of generating samples from various probability distributions, enabling users to quickly create data frames for demonstrations, troubleshooting, or teaching. By prioritizing simplicity and efficiency,'samplezoo' reduces the need for repetitive code, making it particularly useful for beginners or anyone seeking to save time. The package implements standard methods for generating random samples from probability distributions commonly available in base R, with no specific external references. For more details, visit the package documentation.
 }
 \seealso{
 Useful links:
