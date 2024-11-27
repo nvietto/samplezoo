@@ -1,4 +1,4 @@
-# samplezoo 1.0.1
+# samplezoo 1.1.0
 
 * Added lightswitch to pkgdown site
 
