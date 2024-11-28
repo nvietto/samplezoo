@@ -1,3 +1,9 @@
+# samplezoo 1.2.0
+
+* Accepted to CRAN 🎉
+
+* Edited Description
+
 # samplezoo 1.1.0
 
 * Added lightswitch to pkgdown site

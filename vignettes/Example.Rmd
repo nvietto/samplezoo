@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 ## Overview 
 
-This vignette demonstrates how to use the {samplezoo} package to generate datasets of varying sizes (small, medium, and large) with random variables from multiple probability distributions.
+This vignette demonstrates how to use the {samplezoo} package to generate datasets of varying sizes (small, medium, and large) with variables from multiple probability distributions.
 
 Each dataset contains:
 
