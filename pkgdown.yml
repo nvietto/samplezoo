@@ -3,7 +3,7 @@ pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   Example: Example.html
-last_built: 2024-11-28T12:59Z
+last_built: 2024-11-28T13:07Z
 urls:
   reference: https://nvietto.github.io/samplezoo/reference
   article: https://nvietto.github.io/samplezoo/articles
