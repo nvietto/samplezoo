@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/nvietto/samplezoo/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/nvietto/samplezoo/actions/workflows/R-CMD-check.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/samplezoo)](https://CRAN.R-project.org/package=samplezoo)
-[![](https://cranlogs.r-pkg.org/badges/grand-total/samplezoo)](https://cran.r-project.org/web/packages/samplezoo/)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/samplezoo)](https://CRAN.R-project.org/package=samplezoo)
 <!-- badges: end -->
 
 The {samplezoo} package simplifies the generation of samples from various probability distributions, enabling users to quickly create datasets for demonstrations, troubleshooting, or teaching. By prioritizing simplicity and speed over the customization of sample parameters, {samplezoo} is ideal for beginners or anyone looking to save time when working with data.

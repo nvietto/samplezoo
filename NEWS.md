@@ -1,6 +1,4 @@
-# samplezoo (development version)
-
-# samplezoo 1.2.0
+# samplezoo 1.1.1
 
 * Accepted to CRAN 🎉
 
