@@ -39,12 +39,9 @@ You can install the development version of samplezoo from [GitHub](https://githu
 pak::pak("nvietto/samplezoo")
 ```
 
-## Motivation
+## Example 
 
-Creating or reprexing datasets on the [Posit Community](https://forum.posit.co/) help forum can be challenging, especially for beginners. Similarly, building quick datasets for lectures, troubleshooting, or homework assignments often involves repetitive and time-consuming code that’s easy to forget. To simplify these tasks and save some time, {samplezoo} provides a streamlined approach to generating data sets. 
-
-
-For example, generating a dataset with various probability distributions typically looks like this:
+Generating a dataset with various probability distributions typically looks like this:
   
 ```r
 numeric_data <- data.frame(
