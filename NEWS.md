@@ -2,7 +2,7 @@
 
 * Added support for the F distribution.
 
-* Fixed incorrect binomial aliases in the documentation.
+* Fixed incorrect binomial alias in the documentation.
 
 * Introduced a variability parameter to the binomial distribution.
 
