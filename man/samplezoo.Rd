@@ -25,17 +25,18 @@ Generate Samples with a Variety of Probability Distributions
 The distributions included in each data frame are:
 \itemize{
 \item \code{norm}: Normal distribution with mean and standard deviation parameters.
-\item \code{norm2}: Slight variation of the normal distribution.
-\item \code{norm3}: Another slight variation of the normal distribution.
-\item \code{binom}: Binomial (Bernoulli) distribution.
+\item \code{norm_2}: Slight variation of the normal distribution.
+\item \code{norm_3}: Another slight variation of the normal distribution.
+\item \code{binom}: Binomial distribution.
 \item \code{neg}: Negative binomial distribution.
 \item \code{pois}: Poisson distribution.
 \item \code{exp}: Exponential distribution.
 \item \code{unif}: Uniform distribution.
 \item \code{beta}: Beta distribution.
 \item \code{gamma}: Gamma distribution.
-\item \code{chisq}: Chi-squared distribution.
+\item \code{chi_sq}: Chi-squared distribution.
 \item \code{t_dist}: Student's t-distribution.
+\item \code{f_dist}: F-distribution.
 }
 }
 \examples{

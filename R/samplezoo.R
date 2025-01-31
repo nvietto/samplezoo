@@ -9,17 +9,18 @@
 #' @details
 #' The distributions included in each data frame are:
 #' - `norm`: Normal distribution with mean and standard deviation parameters.
-#' - `norm2`: Slight variation of the normal distribution.
-#' - `norm3`: Another slight variation of the normal distribution.
-#' - `binom`: Binomial (Bernoulli) distribution.
+#' - `norm_2`: Slight variation of the normal distribution.
+#' - `norm_3`: Another slight variation of the normal distribution.
+#' - `binom`: Binomial distribution.
 #' - `neg`: Negative binomial distribution.
 #' - `pois`: Poisson distribution.
 #' - `exp`: Exponential distribution.
 #' - `unif`: Uniform distribution.
 #' - `beta`: Beta distribution.
 #' - `gamma`: Gamma distribution.
-#' - `chisq`: Chi-squared distribution.
+#' - `chi_sq`: Chi-squared distribution.
 #' - `t_dist`: Student's t-distribution.
+#' - `f_dist`: F-distribution.
 #' @export
 #' @examples
 #' small_data <- samplezoo("small")
