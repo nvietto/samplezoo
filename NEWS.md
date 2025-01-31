@@ -1,3 +1,5 @@
+# samplezoo 1.2.0
+
 # samplezoo 1.2.1
 
 * Added support for the F distribution.
