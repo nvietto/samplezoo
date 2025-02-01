@@ -2,10 +2,6 @@
 
 * Added support for the F distribution.
 
-* Fixed incorrect binomial alias in the documentation.
-
-* Introduced a variability parameter to the binomial distribution.
-
 * Corrected notation errors (e.g., norm2 instead of norm_2)
 
 # samplezoo 1.1.1
