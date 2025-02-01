@@ -11,7 +11,7 @@
 #' - `norm`: Normal distribution with mean and standard deviation parameters.
 #' - `norm_2`: Slight variation of the normal distribution.
 #' - `norm_3`: Another slight variation of the normal distribution.
-#' - `binom`: Binomial distribution (set to a Bernoulli distribution).
+#' - `binom`: Binomial distribution (set to a Bernoulli distribution with the success probability a random number between 0 and 1).
 #' - `neg`: Negative binomial distribution.
 #' - `pois`: Poisson distribution.
 #' - `exp`: Exponential distribution.
