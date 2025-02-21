@@ -55,6 +55,22 @@ head(data_large)
 
 To ensure reproducibility and introduce controlled variation in your dataset, use set.seed() before generating random data.
 
+**Reproducibility**
+
+```{r}
+set.seed(123)
+data_large <- samplezoo("large")
+head(data_large)
+```
+
+```{r}
+set.seed(123)
+data_large <- samplezoo("large")
+head(data_large)
+```
+
+**Variation**
+
 ```{r}
 set.seed(123)
 data_large <- samplezoo("large")
