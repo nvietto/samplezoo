@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
-<script src="../lightswitch.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
 
 
-    <nav class="navbar navbar-expand-lg fixed-top " aria-label="Site navigation"><div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top bg-light" data-bs-theme="light" aria-label="Site navigation"><div class="container">
 
     <a class="navbar-brand me-2" href="../index.html">samplezoo</a>
 
@@ -49,14 +49,6 @@
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json">
 </form></li>
 <li class="nav-item"><a class="external-link nav-link" href="https://github.com/nvietto/samplezoo/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
-<li class="nav-item dropdown">
-  <button class="nav-link dropdown-toggle" type="button" id="dropdown-lightswitch" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Light switch"><span class="fa fa-sun"></span></button>
-  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-lightswitch">
-<li><button class="dropdown-item" data-bs-theme-value="light"><span class="fa fa-sun"></span> Light</button></li>
-    <li><button class="dropdown-item" data-bs-theme-value="dark"><span class="fa fa-moon"></span> Dark</button></li>
-    <li><button class="dropdown-item" data-bs-theme-value="auto"><span class="fa fa-adjust"></span> Auto</button></li>
-  </ul>
-</li>
       </ul>
 </div>
 
@@ -98,20 +90,20 @@ Binomial, Poisson, and others.</p></li>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">data_small</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/samplezoo.html">samplezoo</a></span><span class="op">(</span><span class="st">"small"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">data_small</span><span class="op">)</span></span>
-<span><span class="co">#&gt;       norm   norm_2    norm_3 binom neg pois       exp       unif      beta</span></span>
-<span><span class="co">#&gt; 1 28.99935 56.12786 31.412398     0   1    2 0.7453278 0.75050975 0.6620331</span></span>
-<span><span class="co">#&gt; 2 53.82976 52.14567 67.209227     0   0    1 3.2327979 0.55119777 0.1100810</span></span>
-<span><span class="co">#&gt; 3 13.44105 49.43263 38.582851     0   0    5 8.9656522 0.47334958 0.5880332</span></span>
-<span><span class="co">#&gt; 4 49.91643 52.04459 34.556926     1   4    3 7.4715324 0.06262987 0.4199155</span></span>
-<span><span class="co">#&gt; 5 59.32329 42.43725 -8.933601     1   0    3 9.1333170 0.09394605 0.1894763</span></span>
-<span><span class="co">#&gt; 6 67.22617 53.09462 41.309733     1   1    4 2.8205524 0.58018262 0.4102933</span></span>
+<span><span class="co">#&gt;       norm   norm_2    norm_3 bern neg pois        exp       unif      beta</span></span>
+<span><span class="co">#&gt; 1 28.99935 56.12786 31.412398    0   0    4  1.9930731 0.85065681 0.4924950</span></span>
+<span><span class="co">#&gt; 2 53.82976 52.14567 67.209227    1   3    2  0.5548857 0.02154078 0.1720294</span></span>
+<span><span class="co">#&gt; 3 13.44105 49.43263 38.582851    0   1    2  6.6549962 0.25282988 0.1254429</span></span>
+<span><span class="co">#&gt; 4 49.91643 52.04459 34.556926    1   2    1  4.9418966 0.65671150 0.2700426</span></span>
+<span><span class="co">#&gt; 5 59.32329 42.43725 -8.933601    1   0    1 21.7477214 0.78914941 0.4219464</span></span>
+<span><span class="co">#&gt; 6 67.22617 53.09462 41.309733    1   0    2  3.2594742 0.70884565 0.3508093</span></span>
 <span><span class="co">#&gt;       gamma    chi_sq     t_dist    f_dist</span></span>
-<span><span class="co">#&gt; 1  7.034627 0.8237004 -0.3851911 0.7773387</span></span>
-<span><span class="co">#&gt; 2  6.694953 8.1284893  0.8685674 0.4388467</span></span>
-<span><span class="co">#&gt; 3 11.219955 1.0033802 -1.5710388 1.2015336</span></span>
-<span><span class="co">#&gt; 4  4.970246 0.9548655  0.5286055 1.1822979</span></span>
-<span><span class="co">#&gt; 5  1.703164 0.9875493 -0.9834165 1.4713310</span></span>
-<span><span class="co">#&gt; 6  2.793250 0.2009423  1.5263026 0.2815656</span></span></code></pre></div>
+<span><span class="co">#&gt; 1 9.2714439 10.728394  0.1289406 1.1673265</span></span>
+<span><span class="co">#&gt; 2 0.8928559  4.106432 -1.4075306 0.9905905</span></span>
+<span><span class="co">#&gt; 3 2.1155766  5.931797 -0.2962882 1.2695938</span></span>
+<span><span class="co">#&gt; 4 1.6750690 14.975020 -0.6428353 1.5489007</span></span>
+<span><span class="co">#&gt; 5 1.3651080 17.334911  0.4973108 1.4109224</span></span>
+<span><span class="co">#&gt; 6 5.3570542  8.240642 -0.6416164 0.6939188</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="generate-a-medium-sized-dataset-i-e--1000-rows">Generate a medium sized dataset (i.e., 1,000 rows)<a class="anchor" aria-label="anchor" href="#generate-a-medium-sized-dataset-i-e--1000-rows"></a>
@@ -119,20 +111,20 @@ Binomial, Poisson, and others.</p></li>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">data_medium</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/samplezoo.html">samplezoo</a></span><span class="op">(</span><span class="st">"medium"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">data_medium</span><span class="op">)</span></span>
-<span><span class="co">#&gt;       norm   norm_2   norm_3 binom neg pois         exp        unif       beta</span></span>
-<span><span class="co">#&gt; 1 53.70711 42.63301 44.44107     1   1    4 24.52227434 0.611279176 0.05470149</span></span>
-<span><span class="co">#&gt; 2 43.56386 57.59616 49.80329     0   0    2 13.14082789 0.647717347 0.33435624</span></span>
-<span><span class="co">#&gt; 3 17.24367 70.47858 87.93541     0   0    3  0.01560173 0.898370061 0.28709951</span></span>
-<span><span class="co">#&gt; 4 48.14548 49.64727 21.44509     1   2    2  2.07913247 0.001358775 0.27005408</span></span>
-<span><span class="co">#&gt; 5 54.31076 54.55473 51.14409     1   0    3  0.08112886 0.993675626 0.25697996</span></span>
-<span><span class="co">#&gt; 6 44.42601 58.08632 52.87305     1   3    3  1.47677834 0.352609714 0.64739416</span></span>
+<span><span class="co">#&gt;       norm   norm_2    norm_3 bern neg pois       exp      unif      beta</span></span>
+<span><span class="co">#&gt; 1 41.37589 63.35978 20.841942    1   1    8 12.233794 0.9370065 0.6279503</span></span>
+<span><span class="co">#&gt; 2 45.59161 57.52457 79.149264    1   0    2 17.107506 0.1403052 0.2132610</span></span>
+<span><span class="co">#&gt; 3 45.64013 66.42630 38.448860    0   3    4  2.050155 0.1616998 0.1254138</span></span>
+<span><span class="co">#&gt; 4 53.47419 48.34354 23.529545    1   2    1  7.479380 0.9222718 0.3970546</span></span>
+<span><span class="co">#&gt; 5 48.99192 43.48127 -4.924535    1   0    4  1.354146 0.7623292 0.1610967</span></span>
+<span><span class="co">#&gt; 6 68.66007 71.72267 55.422912    1   0    3  9.393652 0.7731280 0.4707573</span></span>
 <span><span class="co">#&gt;      gamma    chi_sq     t_dist    f_dist</span></span>
-<span><span class="co">#&gt; 1 2.845824  7.016499 -0.6873386 3.5438561</span></span>
-<span><span class="co">#&gt; 2 2.269898  2.286259  1.1098439 0.7634466</span></span>
-<span><span class="co">#&gt; 3 3.658675  6.483662  1.0036813 0.8062287</span></span>
-<span><span class="co">#&gt; 4 3.059816  2.252142  0.7444812 1.2799826</span></span>
-<span><span class="co">#&gt; 5 2.589842 14.239862 -2.7638427 0.5418487</span></span>
-<span><span class="co">#&gt; 6 2.472693  9.538216 -0.9588301 3.4484385</span></span></code></pre></div>
+<span><span class="co">#&gt; 1 2.322830  5.625974  0.8357163 1.7072051</span></span>
+<span><span class="co">#&gt; 2 5.561163 10.573718 -0.8650410 1.5643331</span></span>
+<span><span class="co">#&gt; 3 3.936257 18.122312 -0.2017988 2.0912690</span></span>
+<span><span class="co">#&gt; 4 1.030830  8.582076  0.8066501 1.0403154</span></span>
+<span><span class="co">#&gt; 5 3.535528  5.229105  1.0143382 0.9507692</span></span>
+<span><span class="co">#&gt; 6 2.313653 18.557863  0.6462972 1.1554207</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="generate-a-large-sized-dataset-i-e--10000-rows">Generate a large sized dataset (i.e., 10,000 rows)<a class="anchor" aria-label="anchor" href="#generate-a-large-sized-dataset-i-e--10000-rows"></a>
@@ -140,62 +132,100 @@ Binomial, Poisson, and others.</p></li>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">data_large</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/samplezoo.html">samplezoo</a></span><span class="op">(</span><span class="st">"large"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">data_large</span><span class="op">)</span></span>
-<span><span class="co">#&gt;       norm   norm_2    norm_3 binom neg pois       exp      unif       beta</span></span>
-<span><span class="co">#&gt; 1 51.09982 76.28091  48.26604     1   0    5  8.555122 0.1594786 0.07786273</span></span>
-<span><span class="co">#&gt; 2 62.47271 49.08985  23.78448     0   0    3 23.206680 0.6989224 0.06268299</span></span>
-<span><span class="co">#&gt; 3 61.43099 50.10612  22.06346     1   0    2  8.285783 0.2426602 0.36913042</span></span>
-<span><span class="co">#&gt; 4 48.01610 69.92567 106.63429     1   1    3  7.596250 0.7817521 0.40952596</span></span>
-<span><span class="co">#&gt; 5 54.98847 63.63310  35.98991     0   3    3 50.287765 0.5261992 0.56930277</span></span>
-<span><span class="co">#&gt; 6 27.90016 55.04196  45.13558     1   0    0  8.732410 0.5053182 0.24058833</span></span>
-<span><span class="co">#&gt;      gamma    chi_sq      t_dist    f_dist</span></span>
-<span><span class="co">#&gt; 1 1.812660  3.032565 -0.06856730 0.2975811</span></span>
-<span><span class="co">#&gt; 2 4.598578  5.818373  0.05403545 0.7673255</span></span>
-<span><span class="co">#&gt; 3 2.754613  8.819830 -1.27561277 1.1793450</span></span>
-<span><span class="co">#&gt; 4 4.892413 18.668571 -0.54215676 0.5570818</span></span>
-<span><span class="co">#&gt; 5 2.932290 17.376974  0.42583335 1.6525855</span></span>
-<span><span class="co">#&gt; 6 1.807278 12.652526 -0.44359454 1.6742660</span></span></code></pre></div>
+<span><span class="co">#&gt;       norm   norm_2   norm_3 bern neg pois        exp       unif       beta</span></span>
+<span><span class="co">#&gt; 1 57.03881 49.06911 56.02105    0   1    4  1.7918004 0.25833690 0.18539389</span></span>
+<span><span class="co">#&gt; 2 29.08872 59.49917 32.78833    1   1    0  4.2511026 0.04949048 0.22955313</span></span>
+<span><span class="co">#&gt; 3 42.02363 59.29340 27.18639    0   1    0 24.8728112 0.58669929 0.05307951</span></span>
+<span><span class="co">#&gt; 4 40.33139 72.20071 66.49272    0   1    4  3.7056449 0.74832800 0.28652734</span></span>
+<span><span class="co">#&gt; 5 64.31326 60.11354 36.46774    0   3    3  0.7327576 0.25238871 0.39573182</span></span>
+<span><span class="co">#&gt; 6 50.97774 58.62958 37.41237    1   0    2  4.2871728 0.49144146 0.25286105</span></span>
+<span><span class="co">#&gt;      gamma    chi_sq     t_dist    f_dist</span></span>
+<span><span class="co">#&gt; 1 3.045566 13.005333  2.3342144 0.5333934</span></span>
+<span><span class="co">#&gt; 2 7.836300  5.656557  1.6249767 0.9854967</span></span>
+<span><span class="co">#&gt; 3 5.835159  6.670267 -0.3537878 0.6946501</span></span>
+<span><span class="co">#&gt; 4 1.362646 13.355680  0.4125888 2.1936965</span></span>
+<span><span class="co">#&gt; 5 1.840758 11.375872 -0.6604255 1.3206411</span></span>
+<span><span class="co">#&gt; 6 5.255833  2.564878 -0.6021285 1.7672593</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="adding-variation-or-ensuring-reproducibility-with-set-seed">Adding Variation or Ensuring Reproducibility with set.seed()<a class="anchor" aria-label="anchor" href="#adding-variation-or-ensuring-reproducibility-with-set-seed"></a>
 </h3>
 <p>To ensure reproducibility and introduce controlled variation in your
 dataset, use set.seed() before generating random data.</p>
+<p><strong>Reproducibility</strong></p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">123</span><span class="op">)</span></span>
 <span><span class="va">data_large</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/samplezoo.html">samplezoo</a></span><span class="op">(</span><span class="st">"large"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">data_large</span><span class="op">)</span></span>
-<span><span class="co">#&gt;       norm   norm_2    norm_3 binom neg pois        exp       unif      beta</span></span>
-<span><span class="co">#&gt; 1 41.59287 83.70725 23.274065     0   1    4  6.4048718 0.85600403 0.1653553</span></span>
-<span><span class="co">#&gt; 2 46.54734 58.33188 35.588540     1   3    1 17.3009535 0.60848590 0.3882179</span></span>
-<span><span class="co">#&gt; 3 73.38062 69.26961 -2.070295     0   0    3  5.3458905 0.04511189 0.2785217</span></span>
-<span><span class="co">#&gt; 4 51.05763 54.31848  6.643849     1   2    8 13.8085160 0.69891376 0.3521530</span></span>
-<span><span class="co">#&gt; 5 51.93932 62.25090 18.040743     0   2    6  0.7016051 0.92416072 0.3165094</span></span>
-<span><span class="co">#&gt; 6 75.72597 71.31986  6.687576     0   0    1 12.5201690 0.12233989 0.6563864</span></span>
+<span><span class="co">#&gt;       norm   norm_2    norm_3 bern neg pois       exp      unif       beta</span></span>
+<span><span class="co">#&gt; 1 41.59287 83.70725 23.274065    0   1    6  6.628373 0.5468223 0.08294255</span></span>
+<span><span class="co">#&gt; 2 46.54734 58.33188 35.588540    1   0    5 21.305366 0.3900809 0.63544684</span></span>
+<span><span class="co">#&gt; 3 73.38062 69.26961 -2.070295    1   2    4  0.189645 0.7262119 0.11520674</span></span>
+<span><span class="co">#&gt; 4 51.05763 54.31848  6.643849    0   2    2  8.479098 0.5101462 0.38184206</span></span>
+<span><span class="co">#&gt; 5 51.93932 62.25090 18.040743    0   0    2 11.885521 0.2964126 0.17196046</span></span>
+<span><span class="co">#&gt; 6 75.72597 71.31986  6.687576    0   1    4  6.363993 0.1442317 0.35908460</span></span>
 <span><span class="co">#&gt;       gamma    chi_sq     t_dist    f_dist</span></span>
-<span><span class="co">#&gt; 1 2.9538585  7.043010 -0.2133706 1.9694189</span></span>
-<span><span class="co">#&gt; 2 5.0453279 15.098221 -0.9622741 0.4872297</span></span>
-<span><span class="co">#&gt; 3 4.4267940  5.747358  1.1208978 0.5503424</span></span>
-<span><span class="co">#&gt; 4 0.5134084  9.698822  0.1267564 0.4970970</span></span>
-<span><span class="co">#&gt; 5 2.2646161  7.493394  0.6761810 1.5805821</span></span>
-<span><span class="co">#&gt; 6 2.5383052 10.504139 -0.1209223 1.3571306</span></span></code></pre></div>
+<span><span class="co">#&gt; 1 6.9893762 10.286282 -0.3814568 0.7264343</span></span>
+<span><span class="co">#&gt; 2 5.4087626  6.519658 -2.3409216 0.9698166</span></span>
+<span><span class="co">#&gt; 3 1.2587867  8.011417 -0.4744159 0.4329175</span></span>
+<span><span class="co">#&gt; 4 0.9871787 14.780626  0.4292511 1.0227474</span></span>
+<span><span class="co">#&gt; 5 2.4021943  6.799788 -0.6692669 2.7446729</span></span>
+<span><span class="co">#&gt; 6 4.2109032 17.858701 -0.3370763 1.3993853</span></span></code></pre></div>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">123</span><span class="op">)</span></span>
+<span><span class="va">data_large</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/samplezoo.html">samplezoo</a></span><span class="op">(</span><span class="st">"large"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">data_large</span><span class="op">)</span></span>
+<span><span class="co">#&gt;       norm   norm_2    norm_3 bern neg pois       exp      unif       beta</span></span>
+<span><span class="co">#&gt; 1 41.59287 83.70725 23.274065    0   1    6  6.628373 0.5468223 0.08294255</span></span>
+<span><span class="co">#&gt; 2 46.54734 58.33188 35.588540    1   0    5 21.305366 0.3900809 0.63544684</span></span>
+<span><span class="co">#&gt; 3 73.38062 69.26961 -2.070295    1   2    4  0.189645 0.7262119 0.11520674</span></span>
+<span><span class="co">#&gt; 4 51.05763 54.31848  6.643849    0   2    2  8.479098 0.5101462 0.38184206</span></span>
+<span><span class="co">#&gt; 5 51.93932 62.25090 18.040743    0   0    2 11.885521 0.2964126 0.17196046</span></span>
+<span><span class="co">#&gt; 6 75.72597 71.31986  6.687576    0   1    4  6.363993 0.1442317 0.35908460</span></span>
+<span><span class="co">#&gt;       gamma    chi_sq     t_dist    f_dist</span></span>
+<span><span class="co">#&gt; 1 6.9893762 10.286282 -0.3814568 0.7264343</span></span>
+<span><span class="co">#&gt; 2 5.4087626  6.519658 -2.3409216 0.9698166</span></span>
+<span><span class="co">#&gt; 3 1.2587867  8.011417 -0.4744159 0.4329175</span></span>
+<span><span class="co">#&gt; 4 0.9871787 14.780626  0.4292511 1.0227474</span></span>
+<span><span class="co">#&gt; 5 2.4021943  6.799788 -0.6692669 2.7446729</span></span>
+<span><span class="co">#&gt; 6 4.2109032 17.858701 -0.3370763 1.3993853</span></span></code></pre></div>
+<p><strong>Variation</strong></p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">123</span><span class="op">)</span></span>
+<span><span class="va">data_large</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/samplezoo.html">samplezoo</a></span><span class="op">(</span><span class="st">"large"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">data_large</span><span class="op">)</span></span>
+<span><span class="co">#&gt;       norm   norm_2    norm_3 bern neg pois       exp      unif       beta</span></span>
+<span><span class="co">#&gt; 1 41.59287 83.70725 23.274065    0   1    6  6.628373 0.5468223 0.08294255</span></span>
+<span><span class="co">#&gt; 2 46.54734 58.33188 35.588540    1   0    5 21.305366 0.3900809 0.63544684</span></span>
+<span><span class="co">#&gt; 3 73.38062 69.26961 -2.070295    1   2    4  0.189645 0.7262119 0.11520674</span></span>
+<span><span class="co">#&gt; 4 51.05763 54.31848  6.643849    0   2    2  8.479098 0.5101462 0.38184206</span></span>
+<span><span class="co">#&gt; 5 51.93932 62.25090 18.040743    0   0    2 11.885521 0.2964126 0.17196046</span></span>
+<span><span class="co">#&gt; 6 75.72597 71.31986  6.687576    0   1    4  6.363993 0.1442317 0.35908460</span></span>
+<span><span class="co">#&gt;       gamma    chi_sq     t_dist    f_dist</span></span>
+<span><span class="co">#&gt; 1 6.9893762 10.286282 -0.3814568 0.7264343</span></span>
+<span><span class="co">#&gt; 2 5.4087626  6.519658 -2.3409216 0.9698166</span></span>
+<span><span class="co">#&gt; 3 1.2587867  8.011417 -0.4744159 0.4329175</span></span>
+<span><span class="co">#&gt; 4 0.9871787 14.780626  0.4292511 1.0227474</span></span>
+<span><span class="co">#&gt; 5 2.4021943  6.799788 -0.6692669 2.7446729</span></span>
+<span><span class="co">#&gt; 6 4.2109032 17.858701 -0.3370763 1.3993853</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">456</span><span class="op">)</span></span>
 <span><span class="va">data_large</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/samplezoo.html">samplezoo</a></span><span class="op">(</span><span class="st">"large"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">data_large</span><span class="op">)</span></span>
-<span><span class="co">#&gt;       norm   norm_2     norm_3 binom neg pois        exp      unif      beta</span></span>
-<span><span class="co">#&gt; 1 29.84718 68.13494  7.9885694     0   0    6  0.3781432 0.3005967 0.4006597</span></span>
-<span><span class="co">#&gt; 2 59.32663 52.32066 21.2526086     0   0    8 17.2863235 0.6932615 0.1509395</span></span>
-<span><span class="co">#&gt; 3 62.01312 62.47569 38.4789563     1   1    2 31.1729393 0.6073009 0.4831276</span></span>
-<span><span class="co">#&gt; 4 29.16661 53.51086 -0.8656269     0   0    0 17.0081881 0.5068313 0.2763463</span></span>
-<span><span class="co">#&gt; 5 39.28465 47.19406 47.7819258     0   0    0  2.2526162 0.1013541 0.1490147</span></span>
-<span><span class="co">#&gt; 6 45.13908 63.33566 53.3620528     1   6    4  1.4136846 0.9065914 0.3080311</span></span>
+<span><span class="co">#&gt;       norm   norm_2     norm_3 bern neg pois        exp      unif       beta</span></span>
+<span><span class="co">#&gt; 1 29.84718 68.13494  7.9885694    0   0    5  3.4417303 0.8866347 0.05413307</span></span>
+<span><span class="co">#&gt; 2 59.32663 52.32066 21.2526086    0   3    3  0.8114356 0.7976466 0.07195440</span></span>
+<span><span class="co">#&gt; 3 62.01312 62.47569 38.4789563    0   2    6 46.8038907 0.6469920 0.22555129</span></span>
+<span><span class="co">#&gt; 4 29.16661 53.51086 -0.8656269    0   1    5 11.6955326 0.2036753 0.71455809</span></span>
+<span><span class="co">#&gt; 5 39.28465 47.19406 47.7819258    1   1    1  0.3535625 0.3653401 0.34619912</span></span>
+<span><span class="co">#&gt; 6 45.13908 63.33566 53.3620528    1   1    2  4.5592136 0.7628573 0.25880522</span></span>
 <span><span class="co">#&gt;       gamma    chi_sq     t_dist    f_dist</span></span>
-<span><span class="co">#&gt; 1 2.7496531 11.072262 -0.4046877 1.4013145</span></span>
-<span><span class="co">#&gt; 2 2.4903396  9.648422 -0.7709046 0.3333817</span></span>
-<span><span class="co">#&gt; 3 1.4651266  6.867532 -0.4342910 0.9866586</span></span>
-<span><span class="co">#&gt; 4 0.8683201 10.147377 -0.4917028 0.4282699</span></span>
-<span><span class="co">#&gt; 5 2.6443795 12.757989  0.6695139 0.3894010</span></span>
-<span><span class="co">#&gt; 6 1.9639101 12.467940 -0.3040910 1.0731372</span></span></code></pre></div>
+<span><span class="co">#&gt; 1 6.7914120  4.464348 -1.0150596 2.2557295</span></span>
+<span><span class="co">#&gt; 2 3.0132520  8.062120  0.3262369 1.4955877</span></span>
+<span><span class="co">#&gt; 3 4.7360954 10.969593  1.5141157 1.0766901</span></span>
+<span><span class="co">#&gt; 4 5.1235878  6.249247  0.6432708 1.1251542</span></span>
+<span><span class="co">#&gt; 5 6.6851637  4.358815  0.2025742 0.4754946</span></span>
+<span><span class="co">#&gt; 6 0.3903841 20.019575  1.6257109 0.6653886</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
