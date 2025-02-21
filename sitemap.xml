@@ -1,14 +1,14 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>https://nvietto.github.io/samplezoo/404.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/LICENSE-text.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/LICENSE.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/articles/Example.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/articles/index.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/authors.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/index.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/news/index.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/reference/index.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/reference/samplezoo-package.html</loc></url>
-<url><loc>https://nvietto.github.io/samplezoo/reference/samplezoo.html</loc></url>
+<url><loc>/404.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/LICENSE.html</loc></url>
+<url><loc>/articles/Example.html</loc></url>
+<url><loc>/articles/index.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/news/index.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/samplezoo-package.html</loc></url>
+<url><loc>/reference/samplezoo.html</loc></url>
 </urlset>
 
