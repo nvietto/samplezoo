@@ -4,7 +4,9 @@
 
 * Made dfs constant across sample sizes
 
-* fixed documentation
+* Fixed documentation
+
+* Clarified set.seed function in vignette
 
 # samplezoo 1.2.1
 
