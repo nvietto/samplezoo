@@ -1,5 +1,5 @@
 url: https://nvietto.github.io/samplezoo/
 template:
   bootstrap: 5
-  light-switch: TRUE
+  lightswitch: yes
 
