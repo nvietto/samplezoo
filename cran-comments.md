@@ -1,14 +1,8 @@
-## Minor Update
+## Patch
 
-In this update I have: 
+* Fixed bern distribution problem 
 
-* Added support for the F distribution.
-
-* Fixed incorrect binomial aliases in the documentation.
-
-* Introduced a variability parameter to the binomial distribution.
-
-* Corrected notation errors (e.g., norm2 instead of norm_2)
+* addressed other minor issue in documents
 
 ## R CMD check results
 
