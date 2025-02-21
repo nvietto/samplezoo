@@ -27,7 +27,7 @@ The distributions included in each data frame are:
 \item \code{norm}: Normal distribution with mean and standard deviation parameters.
 \item \code{norm_2}: Slight variation of the normal distribution.
 \item \code{norm_3}: Another slight variation of the normal distribution.
-\item \code{binom}: Binomial distribution (set to a Bernoulli distribution with the success probability a random number between 0 and 1).
+\item \code{bern}: Bernoulli distribution.
 \item \code{neg}: Negative binomial distribution.
 \item \code{pois}: Poisson distribution.
 \item \code{exp}: Exponential distribution.
