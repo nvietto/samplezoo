@@ -1,7 +1,5 @@
 # samplezoo 1.2.1
 
-# samplezoo 1.2.2
-
 * Fixed the Bernoulli distribution
 
 * Made dfs constant across sample sizes
@@ -10,7 +8,7 @@
 
 * Clarified set.seed function in vignette
 
-# samplezoo 1.2.1
+# samplezoo 1.2.0
 
 * Added support for the F distribution.
 
