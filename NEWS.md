@@ -1,3 +1,5 @@
+# samplezoo (development version)
+
 # samplezoo 1.2.1
 
 * Fixed the Bernoulli distribution
