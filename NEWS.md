@@ -1,3 +1,11 @@
+# samplezoo 1.2.2
+
+* Fixed the Bernoulli distribution
+
+* Made dfs constant across sample sizes
+
+* fixed documentation
+
 # samplezoo 1.2.1
 
 * Added support for the F distribution.
